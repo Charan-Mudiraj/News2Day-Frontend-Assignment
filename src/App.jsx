@@ -13,7 +13,16 @@ function TopHeader() {
   const location = useLocation();
   const currentPath = location.pathname;
   if (currentPath == "/preview") {
-    return <></>;
+    return (
+      <div
+        style={{
+          backgroundColor: "#00000018",
+          height: "100%",
+          width: "100%",
+          position: "absolute",
+        }}
+      ></div>
+    );
   }
   return (
     <div

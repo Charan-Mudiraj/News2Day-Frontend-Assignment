@@ -78,6 +78,9 @@ export default function PreviewNews() {
         content: location.state.content,
         category: location.state.category,
         created: location.state.created,
+        status: location.state.status,
+        likes: location.state.likes,
+        views: location.state.views,
       });
     }
   }, []);
@@ -85,13 +88,26 @@ export default function PreviewNews() {
     <>
       <button
         className="primary-btn"
-        style={{ position: "absolute", top: "20px", left: "20px" }}
+        style={{ position: "absolute", top: "20px", left: "40px" }}
         onClick={() => {
           navigate(-1);
         }}
       >
         Go Back
       </button>
+      {news.status && news.status == "published" && (
+        <div id="preview-meta">
+          <p>Created On: {news.created}</p>
+          <p>
+            <i class="fa-regular fa-eye" style={{ marginRight: "5px" }}></i>
+            Views: {news.views}
+          </p>
+          <p>
+            <i class="fa-solid fa-thumbs-up" style={{ marginRight: "5px" }}></i>
+            Likes: {news.likes}
+          </p>
+        </div>
+      )}
 
       <div id="pn">
         <div id="pn-top">
@@ -154,7 +170,7 @@ export default function PreviewNews() {
         </div>
         <div id="pn-bottom">
           <div>
-            <img src={icon} />
+            <img src={icon} style={{ marginLeft: "10px" }} />
             <div>
               <p>Your name</p>
               <div>
@@ -166,7 +182,7 @@ export default function PreviewNews() {
           <div>
             <i class="fa-regular fa-thumbs-up"></i>
             <i class="fa-regular fa-paper-plane"></i>
-            <img src={whatsappIcon} />
+            <img src={whatsappIcon} style={{ marginRight: "10px" }} />
           </div>
         </div>
       </div>

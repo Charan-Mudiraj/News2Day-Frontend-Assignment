@@ -3,6 +3,7 @@
   width: calc(100% - 1000px);
   margin: 0 auto;
   position: relative;
+  background-color: rgb(255, 255, 255);
 }
 #pn-top {
   width: 100%;
@@ -162,6 +163,20 @@
 }
 #pn-bottom > div > i {
   font-size: 30px;
+}
+#preview-meta {
+  background-color: white;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  padding: 15px;
+  font-size: larger;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.075);
+  color: rgba(0, 0, 0, 0.801);
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
 }
 @media screen and (max-width: 1300px) {
   #pn {

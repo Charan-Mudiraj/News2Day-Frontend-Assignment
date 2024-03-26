@@ -25,7 +25,9 @@ function Row({ news, sno, setNewsFeeds }) {
       <td>{news.title}</td>
       <td>{news.category}</td>
       <td>{news.created}</td>
-      <td style={{ backgroundColor: statusBg }}>{news.status}</td>
+      <td style={{ backgroundColor: statusBg }}>
+        <b>{news.status}</b>
+      </td>
       <td className="mn-actions">
         {news.status != "published" && (
           <i className="fa-solid fa-pen-to-square" onClick={onEdit}></i>

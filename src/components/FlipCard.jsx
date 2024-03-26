@@ -1,12 +1,19 @@
 import "./css/FlipCard.css";
 import { allNews } from "./atoms";
 import { useRecoilValue } from "recoil";
-
+import { useNavigate } from "react-router-dom";
 export default function FlipCard({ title, index }) {
+  const navigate = useNavigate();
   const newsFeeds = useRecoilValue(allNews);
   const news = newsFeeds[index];
   return (
-    <div className="flip-card">
+    <div
+      className="flip-card"
+      onClick={() => {
+        navigate("preview", { state: news });
+      }}
+      style={{ cursor: "pointer" }}
+    >
       <div className="flip-card-inner">
         <div className="flip-card-front">
           <p className="title">{title}</p>

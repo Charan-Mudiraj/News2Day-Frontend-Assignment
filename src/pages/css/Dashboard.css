@@ -1,8 +1,9 @@
 #db {
   display: flex;
-  justify-content: space-around;
-  padding: 20px 0;
-  padding-right: 30px;
+  /* justify-content: space-around; */
+  margin: 0 auto;
+  padding: 20px 50px;
+  flex-wrap: wrap;
 }
 #db-left {
   display: flex;

@@ -177,20 +177,41 @@ export default function CreateNews() {
           ))}
         </div>
       </div>
-      <div style={{ display: "flex", gap: "10px" }}>
-        <button className="primary-btn" onClick={saveToDraft}>
-          Save to Draft
-        </button>
-        <button className="secondary-btn" onClick={publish}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
+        <div style={{ display: "flex", gap: "10px" }}>
+          <button className="secondary-btn" onClick={saveToDraft}>
+            <i
+              class="fa-regular fa-folder-open"
+              style={{ fontSize: "16px", marginRight: "6px" }}
+            ></i>
+            Save to Draft
+          </button>
+
+          <button
+            className="primary-btn"
+            onClick={() => {
+              navigate("/preview");
+            }}
+          >
+            <i
+              class="fa-regular fa-eye"
+              style={{ fontSize: "16px", marginRight: "6px" }}
+            ></i>
+            Priview
+          </button>
+        </div>
+
+        <button className="primary-btn" onClick={publish}>
+          <i
+            class="fa-solid fa-upload"
+            style={{ fontSize: "16px", marginRight: "6px" }}
+          ></i>
           Publish
-        </button>
-        <button
-          className="secondary-btn"
-          onClick={() => {
-            navigate("/preview");
-          }}
-        >
-          Priview
         </button>
       </div>
     </div>

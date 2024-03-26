@@ -70,6 +70,7 @@ export default function Dashboard() {
           axis="x"
         />
       </div>
+      <hr />
       <div id="db-mid">
         <p className="db-title">Admin Profile</p>
         <div id="db-mid-profile">
@@ -81,6 +82,7 @@ export default function Dashboard() {
           <FlipCard title="Most Liked Feed" index={topLikedNewsIndex} />
         </div>
       </div>
+      <hr />
       <div id="db-right">
         <div id="db-right-quickLinks">
           <p className="db-title">Quick Links</p>
