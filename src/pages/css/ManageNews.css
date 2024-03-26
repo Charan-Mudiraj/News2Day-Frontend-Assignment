@@ -1,0 +1,47 @@
+#mn {
+  display: flex;
+  justify-content: center;
+}
+#mn table,
+#mn table td,
+#mn table th {
+  border: 1px solid black;
+  /* border-collapse: collapse; */
+}
+#mn table td,
+#mn table th {
+  padding: 5px;
+  text-align: center;
+}
+#mn table {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 30px 50px;
+  padding: 3px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#mn table tr:nth-of-type(1) th {
+  border-radius: 10px 10px 0 0;
+  background-color: #ff00003f;
+}
+#mn table tr:last-child th {
+  border-radius: 0 0 0 10px;
+}
+#mn table tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+.mn-actions .fa-trash {
+  color: #ff0000c9;
+}
+.mn-actions i {
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.753);
+}
+.mn-actions i:hover {
+  background-color: rgba(0, 0, 0, 0.726);
+  color: white;
+}

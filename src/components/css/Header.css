@@ -1,0 +1,60 @@
+.input {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  background-color: #0d1117;
+  justify-content: center;
+  border-radius: 20px;
+  align-items: center;
+  opacity: 92%;
+  padding: 10px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.205);
+}
+/* .input:hover {
+  opacity: 90%;
+} */
+
+.value {
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin: 0 10px 0 10px;
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.value:not(:active):hover,
+.value:focus {
+  background-color: #21262c;
+}
+
+.value:focus,
+.value:active {
+  background-color: #1a1f24;
+  outline: none;
+}
+
+.value:focus::before,
+.value:active::before {
+  opacity: 1;
+}
+
+.value input[type="radio"] {
+  display: none; /* Hide the radio input */
+}
+
+.value input[type="radio"]:checked + i {
+  color: #2f81f7;
+}
+.value input[type="radio"]:checked + i + p {
+  color: #2f81f7;
+}
+.value svg {
+  width: 15px;
+}

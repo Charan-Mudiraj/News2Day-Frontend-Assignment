@@ -1,0 +1,69 @@
+#db {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  padding-right: 30px;
+}
+#db-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+#db-mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+#db-mid-profile {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.116);
+  border-radius: 20px;
+  width: fit-content;
+  height: fit-content;
+}
+#db-mid-topPerformed {
+  display: flex;
+  gap: 80px;
+}
+#db-cat-vs-views,
+#db-cat-vs-likes {
+  width: 80%;
+  padding: 20px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.116);
+  border-radius: 15px;
+}
+#db-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#db-right-quickLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+#db-total-likes-2d {
+  height: 250px;
+}
+#db-right-quickLinks > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.db-title {
+  font-size: 35px;
+  border-bottom: 3px solid black;
+  padding-right: 80%;
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.74);
+  border-color: rgba(0, 0, 0, 0.74);
+  width: max-content;
+}
+.db-title {
+  padding-right: 50%;
+}
+.db-link-icon {
+  font-size: 25px;
+}

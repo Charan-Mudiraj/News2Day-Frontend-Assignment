@@ -1,0 +1,84 @@
+#cn {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  gap: 18px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#cn-mediaList {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#cn-addMedia {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border-radius: 15px;
+  border-color: #00000073;
+  border-style: dashed;
+  border-width: 4px;
+  opacity: 70%;
+}
+#cn-addMedia:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+.cn-media {
+  height: 82px;
+  border-radius: 15px;
+}
+#cn-photoIcon {
+  height: 50px;
+  color: #00000073;
+}
+input[type="text"],
+textarea {
+  background-color: white;
+  border-width: 1px;
+  border-radius: 5px;
+  width: 100%;
+  border-color: rgba(0, 0, 0, 0.308);
+  padding: 10px;
+  border-style: solid;
+}
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+}
+#cn-categories {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  user-select: none;
+  gap: 5px;
+}
+.primary-btn {
+  color: white;
+  background-color: rgb(0, 102, 255);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.primary-btn:hover {
+  background-color: rgb(1, 87, 218);
+}
+.secondary-btn {
+  color: rgba(0, 0, 0, 0.774);
+  background-color: rgba(0, 0, 0, 0.253);
+  padding: 10px 25px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.secondary-btn:hover {
+  background-color: rgba(0, 0, 0, 0.342);
+}
