@@ -1,6 +1,5 @@
 #db {
   display: flex;
-  /* justify-content: space-around; */
   margin: 0 auto;
   padding: 20px 50px;
   flex-wrap: wrap;
@@ -9,7 +8,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center;
 }
 #db-mid {
   display: flex;
@@ -33,6 +31,7 @@
   padding: 20px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.116);
   border-radius: 15px;
+  width: fit-content;
 }
 #db-right {
   display: flex;
@@ -67,4 +66,32 @@
 }
 .db-link-icon {
   font-size: 25px;
+}
+@media screen and (max-width: 860px) {
+  #db {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  #db,
+  #db-left,
+  #db-mid,
+  #db-right {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  #db-mid {
+    order: 0;
+    margin-bottom: 20px;
+  }
+  #db-right {
+    order: -1;
+    margin-bottom: 10px;
+  }
+  #db-mid-topPerformed {
+    gap: 20px;
+  }
+  .db-title {
+    padding-right: 3dvi;
+  }
 }

@@ -20,3 +20,8 @@ body {
 #root {
   height: 100%;
 }
+@media screen and (max-width: 630px) {
+  #top-header {
+    display: none;
+  }
+}

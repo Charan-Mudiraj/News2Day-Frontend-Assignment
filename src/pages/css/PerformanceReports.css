@@ -46,3 +46,8 @@
   color: rgba(0, 0, 0, 0.678);
   font-weight: bold;
 }
+@media screen and (max-width: 860px) {
+  #pr div {
+    width: fit-content;
+  }
+}
